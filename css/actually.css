@@ -49,10 +49,19 @@ header .search-social { padding: 0 15px; }
 /********** BODY & ARTICLE STYLES - BEGIN **********/
 .featured-article { margin: 20px 0 0 0; }
 .featured-article img { width: 100%; }
+.featured-article .article-title,
+.sub-articles .article-title,
+.recent-articles .article-title { font-size: 30pt; line-height: 32pt; }
 .featured-article .post-date { font-size: 12pt; margin-bottom: 5px; }
+.featured-article p:not([class]),
+.sub-articles p:not([class]),
+.recent-articles p:not([class]),
+.tertiary-articles p:not([class]),
 .featured-text { margin-bottom: 10px; font-size: 14pt;}
 .featured-text .continue { color: #ff3300; text-decoration: none; }
 .post-category { font-size: 12pt; text-transform: uppercase; }
+.post-category a { color: #000; }
+.post-category a:hover { color: #000; }
 .featured-article-details { width: 360px; float: right; }
 
 .post-date { color: #666666; }
@@ -69,6 +78,8 @@ header .search-social { padding: 0 15px; }
 
 .article { font-family: "Roboto"; font-size: 16pt; margin: 20px 0 0 0; }
 .article-title { font-family:"Crimson Text"; }
+.article-title a { color: #000; text-decoration: none; }
+.article-title a:hover { text-decoration: none; }
 .article .article-main { border-right: 1px solid #000; }
 .article .article-main p { margin: 15px 0; }
 .article-teaser { font-family: "Crimson Text Italic"; font-style: italic; font-size: 18pt; font-weight: 400; color: #848484; }

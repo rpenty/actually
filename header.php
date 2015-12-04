@@ -21,10 +21,41 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'actually' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+<div id="page" class="hfeed site">
+	<nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Life</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <div id="nav-search">
+                        <form action="#" method="post">
+                            <input type="text" value="Search">
+                            <!--input type="submit" value="Submit"-->
+                        </form>
+                    </div>
+                    <li class="search-icon"><i class="fa fa-search"></i></li>
+                </ul>
+                
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+	<!--a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'actually' ); ?></a-->
+
+	<!--header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -32,12 +63,12 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php endif; ?>
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		</div><!-- .site-branding -->
+		</div--><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<!--nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'actually' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav--><!-- #site-navigation -->
+	<!--/header--><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">
