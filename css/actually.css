@@ -5,7 +5,7 @@ p {padding: 0; margin: 0; font-family: "Roboto"; } /* font-size: 18pt; */
 a, a:visited, a:hover {color: #000;}
 
 /********** HEADER STYLES - BEGIN **********/
-header { position: relative; margin-top: 15px; }
+header { position: relative; /*margin-top: 15px; */}
 header .search-social { padding: 0 15px; }
 .search { float: left; position: relative; }
 .search input { border-radius: 4px; background-color: #efefef; text-align: center; width: 225px; height: 25px; border: none; color: #999; }

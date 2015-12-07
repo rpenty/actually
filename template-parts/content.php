@@ -30,7 +30,7 @@ $post_number = $wp_query->current_post;
             <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
             <div class="post-date"><?php the_date(); ?></div>
             <?php the_excerpt(); ?>
-            <p class="featured-text"><a href="<?php esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
+            <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
             <div class="post-details row no-gutter">
                 <div class="share col-md-5 col-xs-3"><i class="fa fa-share"></i> Share</div>
                 <div class="comments col-md-7 col-xs-5"><i class="fa fa-comments"></i> 3 Comments</div>
@@ -49,7 +49,7 @@ $post_number = $wp_query->current_post;
 			}
 			the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' );
             the_excerpt(); ?>
-            <p class="featured-text"><a href="<?php esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
+            <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
             <div class="post-details row no-gutter">
                 <div class="share col-xs-3"><i class="fa fa-share"></i> Share</div>
                 <div class="comments col-xs-5"><i class="fa fa-comments"></i> 3 Comments</div>
@@ -70,7 +70,7 @@ $post_number = $wp_query->current_post;
             <p class="post-category visible-xs-block"><?php the_category(', '); ?></p>
             <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' );
             the_excerpt(); ?>
-            <p class="featured-text hidden-xs"><a href="#" class="continue">Continue reading...</a></p>
+            <p class="featured-text hidden-xs"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
             <div class="post-details row no-gutter">
                 <div class="share col-sm-2 col-xs-5"><i class="fa fa-share"></i> <span class="visible-xs-inline">SHARE</span></div>
                 <div class="comments col-sm-3 col-xs-7"><i class="fa fa-comments"></i> 3 <span class="visible-xs-inline">COMMENTS</span></div>
@@ -86,7 +86,7 @@ $post_number = $wp_query->current_post;
                 <p class="post-category"><?php the_category(', '); ?></p>
                 <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); 
                 the_excerpt(); ?>
-                <p class="featured-text"><a href="#" class="continue">Continue...</a></p>
+                <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue...</a></p>
                 <div class="post-details row no-gutter">
                     <div class="share col-md-3 col-xs-2"><i class="fa fa-share"></i></div>
                     <div class="comments col-md-4 col-xs-10"><i class="fa fa-comments"></i> 3</div>
