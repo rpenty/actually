@@ -2,9 +2,10 @@ body { padding: 0; margin: 0; }
 #container-main { width: 1170px; margin: 0 auto; position: relative; }
 hr {width: 100%; color: #000; background-color: #000; height: 1px; margin: 0; padding: 0; border: none;}
 p {padding: 0; margin: 0; font-family: "Roboto"; } /* font-size: 18pt; */
+a, a:visited, a:hover {color: #000;}
 
 /********** HEADER STYLES - BEGIN **********/
-header { position: relative; text-align: center; margin-top: 15px; }
+header { position: relative; margin-top: 15px; }
 header .search-social { padding: 0 15px; }
 .search { float: left; position: relative; }
 .search input { border-radius: 4px; background-color: #efefef; text-align: center; width: 225px; height: 25px; border: none; color: #999; }
@@ -89,6 +90,11 @@ header .search-social { padding: 0 15px; }
 .article-details .post-date {font-size: 14pt;}
 .article div img { width: 100%; }
 
+.nav-links div a {
+    font-family: "Crimson Text";
+    font-size: 16pt;
+}
+
 h1 { font-family: "Crimson Text Italic"; font-size: 18pt; font-style: italic; margin: 0 0 20px 0; padding: 0; }
 blockquote { color: #848484; border-top: 3px solid #848484; border-bottom: 1px solid #848484; border-left: none; border-right: none; padding: 20px 85px; margin: 30px 0; text-align: center; font-family: "Crimson Text Italic"; font-style: italic; font-size: 28pt; font-weight: 400; }
 /********** BODY & ARTICLE STYLES - END **********/
@@ -116,6 +122,35 @@ footer .social .fa-linkedin { background-color: #007bb6; }
 footer .social .fa-google-plus { background-color: #dd4b39; }
 footer .social .fa-envelope { background-color: #333; }
 /********** FOOTER STYLES - END **********/
+
+/********** WIDGET STYLES - BEGIN **********/
+aside.widget ul,
+.wpp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2.widget-title {
+    font-family: "Crimson Text Italic";
+    font-style: italic;
+    font-size: 28pt;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.widget_recent_entries ul li {
+    margin: 0 0 20px 0;
+}
+.widget_recent_entries ul li a,
+.wpp-post-title {
+    font-family: "Roboto";
+    font-size: 16pt;
+    font-weight: bold;
+}
+.post-stats,
+.post-date {
+    display: block;
+}
+/********** WIDGET STYLES - END **********/
 
 @-ms-viewport{
   width: device-width;
