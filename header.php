@@ -35,21 +35,21 @@
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <!--ul class="nav navbar-nav">
                     <li class="active"><a href="#">Life</a></li>
                     <li><a href="#">Shorts</a></li>
                     <li><a href="#">Comedy</a></li>
                     <li><a href="#">Sports</a></li>
-                    <li><a href="#">Entertainment</a></li>
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                    <div id="nav-search">
+                    <li><a href="#">Entertainment</a></li-->
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => false, 'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>') ); ?>
+                    <!--div id="nav-search">
                         <form action="#" method="post">
-                            <input type="text" value="Search">
+                            <input type="text" value="Search"-->
                             <!--input type="submit" value="Submit"-->
-                        </form>
+                        <!--/form>
                     </div>
                     <li class="search-icon"><i class="fa fa-search"></i></li>
-                </ul>
+                </ul-->
                 
             </div><!--/.navbar-collapse -->
         </div>

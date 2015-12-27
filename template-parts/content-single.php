@@ -7,6 +7,8 @@
  * @package actually
  */
 
+$article_page_tagline = get_field('article_page_tagline');
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,8 +17,8 @@
 			<header class="entry-header">
 				<div class="post-category"><?php the_category(', '); ?></div>
 				<?php
-					the_title( '<div class="article-title">', '</div>' ); 
-					echo '<div class="article-teaser">' . get_post_meta($post->ID, 'Tagline', true) . '</div>';
+					the_title( '<div class="article-title">', '</div>' );
+					echo '<div class="article-teaser">' . $article_page_tagline . '</div>';
 				?>
 				<div class="row article-details">
                     <div class="share col-xs-2"><i class="fa fa-share"></i> Share</div>

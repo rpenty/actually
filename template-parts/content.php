@@ -15,86 +15,21 @@ $post_number = $wp_query->current_post;
 
 <!--article id="post-<?php the_ID(); ?>" <?php post_class(); ?>-->
 
-<?php if ($post_number == 0) {  ?>
-
-	<div class="row featured-article">
-        <div class="col-lg-8 col-md-6 col-xs-12">
-            <?php
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			}
-			?>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-            <p class="post-category"><?php the_category(', '); ?></p>
-            <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
-            <div class="post-date"><?php the_date(); ?></div>
-            <?php the_excerpt(); ?>
-            <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
-            <div class="post-details row no-gutter">
-                <div class="share col-md-5 col-xs-3"><i class="fa fa-share"></i> Share</div>
-                <div class="comments col-md-7 col-xs-5"><i class="fa fa-comments"></i> 3 Comments</div>
-                <div class="post-date col-xs-4 hidden-lg hidden-md"><?php the_date(); ?></div>
-            </div>
-        </div>
-    </div>
-    <hr class="visible-xs-block visible-sm-block">
-<?php } else if ($post_number == 1 || $post_number == 2) { 
-	if ($post_number == 1) { echo '<div class="row recent-articles">'; } ?>
-        <div class="col-md-6 col-xs-12">
-            <p class="post-category"><?php the_category(', '); ?></p>
-            <?php
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			}
-			the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' );
-            the_excerpt(); ?>
-            <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
-            <div class="post-details row no-gutter">
-                <div class="share col-xs-3"><i class="fa fa-share"></i> Share</div>
-                <div class="comments col-xs-5"><i class="fa fa-comments"></i> 3 Comments</div>
-                <div class="post-date col-xs-4"><?php the_date(); ?></div>
-            </div>
-        </div>
-    <?php if ($post_number == 2) { echo '</div><hr>'; }
+<?php if ($post_number == 0) { 
+        get_template_part( 'inc/article', 'featured' );
+        echo '<hr class="visible-xs-block visible-sm-block">';
+    } else if ($post_number == 1 || $post_number == 2) { 
+	   if ($post_number == 1) { echo '<div class="row recent-articles">'; }
+            get_template_part( 'inc/article', 'recent' );
+        if ($post_number == 2) { echo '</div><hr>'; }
 
   	} else if ($post_number >= 3 && $post_number <= 6) { 
   		if ($post_number == 3) { echo '<div class="row sub-articles">'; }
-  		?>
-  		<div class="col-lg-3 col-xs-6">
-            <p class="post-category hidden-xs"><?php the_category(', '); ?></p>
-            <?php
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			} ?>
-            <p class="post-category visible-xs-block"><?php the_category(', '); ?></p>
-            <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' );
-            the_excerpt(); ?>
-            <p class="featured-text hidden-xs"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
-            <div class="post-details row no-gutter">
-                <div class="share col-sm-2 col-xs-5"><i class="fa fa-share"></i> <span class="visible-xs-inline">SHARE</span></div>
-                <div class="comments col-sm-3 col-xs-7"><i class="fa fa-comments"></i> 3 <span class="visible-xs-inline">COMMENTS</span></div>
-                <div class="post-date col-sm-7 hidden-xs"><?php the_date(); ?></div>
-            </div>
-        </div>
-  		<?php
+  		    get_template_part( 'inc/article', 'sub' );
 		if ($post_number == 6) { echo '</div><hr>'; }
-
 	} else if ($post_number >= 7 && $post_number <= 13) { 
-		if ($post_number == 7) { echo '<div class="row tertiary-articles"><h1>Some Title</h1>'; } ?>
-            <div class="col-lg-2 col-sm-4 col-xs-6">
-                <p class="post-category"><?php the_category(', '); ?></p>
-                <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); 
-                the_excerpt(); ?>
-                <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue...</a></p>
-                <div class="post-details row no-gutter">
-                    <div class="share col-md-3 col-xs-2"><i class="fa fa-share"></i></div>
-                    <div class="comments col-md-4 col-xs-10"><i class="fa fa-comments"></i> 3</div>
-                    <div class="post-date col-md-5 hidden-xs"><?php the_date(); ?></div>
-                </div>
-            </div>
-    <?php
-
+		if ($post_number == 7) { echo '<div class="row tertiary-articles"><h1>Some Title</h1>'; }
+            get_template_part( 'inc/article', 'tertiary' );
      	if ($post_number == 13) { echo '</div>'; }
 
 	 } ?>
