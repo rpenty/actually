@@ -103,6 +103,37 @@ h1 { font-family: "Crimson Text Italic"; font-size: 18pt; font-style: italic; ma
 blockquote { color: #848484; border-top: 3px solid #848484; border-bottom: 1px solid #848484; border-left: none; border-right: none; padding: 20px 85px; margin: 30px 0; text-align: center; font-family: "Crimson Text Italic"; font-style: italic; font-size: 28pt; font-weight: 400; }
 /********** BODY & ARTICLE STYLES - END **********/
 
+/********** COMMENT STYLES - BEGIN **********/
+.comment-body {
+    font-size: 13pt;
+}
+.comment-meta {
+    background-color: transparent;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+.comment-content {
+    padding: 10px 0;
+}
+.reply {
+    border-top: 1px dotted #ccc;
+}
+ol.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol.children {
+    list-style: none;
+}
+.logged-in-as {
+    font-size: 13pt;
+}
+.form-submit input[type="submit"] {
+    font-size: 13pt;
+}
+/********** COMMENT STYLES - BEGIN **********/
+
 /********** RIGHT SECTION STYLES - BEGIN **********/
 
 .right-section .title { font-family: "Crimson Text Italic"; font-style: italic; font-size: 28pt; font-weight: 400; margin-bottom: 15px; }
@@ -114,6 +145,10 @@ blockquote { color: #848484; border-top: 3px solid #848484; border-bottom: 1px s
 /********** RIGHT SECTION STYLES - BEGIN **********/
 
 /********** FOOTER STYLES - BEGIN **********/
+.site-description p {
+    font-family: "Roboto";
+    font-size: 14pt;
+}
 footer { background-color: #ddd; padding: 20px 15px; margin: 30px 0 0 0; }
 .site-description .title { font-family: "Crimson Text"; font-size: 36pt; }
 footer .social .fa { color: #fff; border-radius: 36px; width: 36px; height: 36px; padding: 10px 0 0 10px; margin: 0; font-size: 18px; }

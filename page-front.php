@@ -66,16 +66,6 @@ get_header(); ?>
 					$category_post_number++;
 				endforeach;
 
-				$args = array ('numberposts' => 6, 'offset' => 7, 'category_name' => 'shorts');
-				$myfuckyouposts = get_posts($args);
-				foreach($myfuckyouposts as $post) :
-					
-					//echo "$post_number is " . $post_number;
-
-					the_title();
-
-					$category_post_number++;
-				endforeach;
 
  			?>
 
