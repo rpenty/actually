@@ -15,9 +15,9 @@ header .search-social { padding: 0 15px; }
 .navbar ul { margin: 24px 0 0 0; padding: 0; list-style: none; position: relative; }
 .navbar ul li { font-family: "Roboto"; font-size: 12pt; text-transform: uppercase; margin: 0 25px 0 0; padding: 0; }
 .navbar ul li a { padding: 0; margin: 0; }
-.navbar ul li.search-icon { width: 22px; padding: 0 4px; border-radius: 3px; cursor: pointer; }
-.navbar ul li.search-icon.close-search,
-.navbar ul li.search-icon:hover { background-color: #ccc; }
+.navbar .search-icon { width: 22px; padding: 0 4px; border-radius: 3px; cursor: pointer; position: relative;; }
+.navbar .search-icon.close-search,
+.navbar .search-icon:hover { background-color: #ccc; }
 .navbar .social { margin: 0 0 0 30px; }
 
 /* */
