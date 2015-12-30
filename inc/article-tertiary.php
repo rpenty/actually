@@ -8,7 +8,7 @@
     <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue...</a></p>
     <div class="post-details row no-gutter">
         <div class="share col-md-3 col-xs-2"><i class="fa fa-share"></i></div>
-        <div class="comments col-md-4 col-xs-10"><i class="fa fa-comments"></i> 3</div>
+        <div class="comments col-md-4 col-xs-10"><i class="fa fa-comments"></i> <?php comments_number( '0', '1', '%' ); ?></div>
         <div class="post-date col-md-5 hidden-xs"><?php the_date(); ?></div>
     </div>
 </div>

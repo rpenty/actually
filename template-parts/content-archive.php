@@ -19,12 +19,10 @@ $archive_post_number = $archive_post_number + 1;
 <?php  
   	if ($archive_post_number == 1) { echo '<div class="row sub-articles">'; }
 	
-	//get_template_part( 'inc/article', 'sub' );
 	include(locate_template('inc/article-sub.php'));
 
 	if (($archive_post_number % 4 == 0) && $archive_post_number != 1 ) { echo '</div><hr><div class="row sub-articles">'; }
 
-//echo "rp test: " . $archive_post_number;
 ?>
 
 		<?php

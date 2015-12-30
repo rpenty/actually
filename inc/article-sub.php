@@ -18,7 +18,7 @@
     <p class="featured-text hidden-xs"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
     <div class="post-details row no-gutter">
         <div class="share col-sm-2 col-xs-5"><i class="fa fa-share"></i> <span class="visible-xs-inline">SHARE</span></div>
-        <div class="comments col-sm-3 col-xs-7"><i class="fa fa-comments"></i> 3 <span class="visible-xs-inline">COMMENTS</span></div>
+        <div class="comments col-sm-3 col-xs-7"><i class="fa fa-comments"></i> <?php comments_number( '', '1 <span class="visible-xs-inline">COMMENT</span>', '% <span class="visible-xs-inline">COMMENTS</span>' ); ?></div>
         <div class="post-date col-sm-7 hidden-xs"><?php the_date(); ?></div>
     </div>
 </div>

@@ -17,7 +17,7 @@
         <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">Continue reading...</a></p>
         <div class="post-details row no-gutter">
             <div class="share col-md-5 col-xs-3"><i class="fa fa-share"></i> Share</div>
-            <div class="comments col-md-7 col-xs-5"><i class="fa fa-comments"></i> 3 Comments</div>
+            <div class="comments col-md-7 col-xs-5"><i class="fa fa-comments"></i> <?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></div>
             <div class="post-date col-xs-4 hidden-lg hidden-md"><?php the_date(); ?></div>
         </div>
     </div>

@@ -13,7 +13,7 @@
 		<footer class="row">
 	        <div class="site-description col-md-8">
 	            <p class="title">About Actually</p>
-	            <p>Site overview here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean rhoncus sapien odio. Duis maximus, risus at condimentum vulputate, turpis est rhoncus velit, at blandit mauris metus vitae massa. Nam non condimentum neque. Nunc vestibulum nibh rutrum, pellentesque nulla eget, fermentum mi. Maecenas in lacus interdum, vulputate magna eu, suscipit libero. Aenean porta nisl leo, vitae iaculis arcu posuere vitae</p>
+	            <p><em>Actually It's Rob Penty Dot Org</em> is - you guessed it - Rob Penty's blog. Rob is a writer, storyteller, and improviser living in Brooklyn, NY. He is also a web developer and he built this theme from scratch using Underscores and Bootstrap. You can connect with Rob on any of the social media platforms you see here.</p>
 	        </div>
 	        <div class="social clearfix col-md-4">
 	            <a href="https://www.facebook.com/rob.penty.3" target="_blank"><i class="fa fa-facebook"></i></a>

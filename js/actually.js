@@ -10,15 +10,15 @@ jQuery(document).ready(function(){
         }
     });
     
-    jQuery(".search-icon").click(function() {
+    jQuery("i.fa-search").click(function() {
         jQuery("#nav-search").toggle();
-        jQuery(this).toggleClass("close-search");
-        if(jQuery(this).find("i").hasClass("fa-search")) {
-            jQuery(this).find("i").removeClass("fa-search");
-            jQuery(this).find("i").addClass("fa-remove");
+        jQuery(this).parent(".search-icon").toggleClass("close-search");
+        if(jQuery(this).hasClass("fa-search")) {
+            jQuery(this).removeClass("fa-search");
+            jQuery(this).addClass("fa-remove");
         } else {
-            jQuery(this).find("i").removeClass("fa-remove");
-            jQuery(this).find("i").addClass("fa-search");
+            jQuery(this).removeClass("fa-remove");
+            jQuery(this).addClass("fa-search");
         }
     });
 

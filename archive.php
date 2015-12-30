@@ -21,10 +21,6 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php
-				//$archive_post_number = 1;
-			?>
-
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -36,8 +32,7 @@ get_header(); ?>
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'template-parts/content', 'archive' );
-
-					//$archive_post_number++;
+					
 				?>
 
 			<?php endwhile; ?>

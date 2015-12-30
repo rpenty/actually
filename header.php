@@ -39,9 +39,9 @@
                 <div class="search-icon pull-right" style="margin-top: 24px; font-size: 12pt;">
                     <i class="fa fa-search"></i>
                     <div id="nav-search">
-                        <form action="#" method="post">
-                            <input type="text" value="Search"-->
-                            <!--input type="submit" value="Submit"-->
+                        <form role="search" method="get" class="search-form" action="http://dev.wordpress.local:8888/">
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                            <input type="submit" class="search-submit" value="Search" style="display: none;">
                         </form>
                     </div>
                 </div>
