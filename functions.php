@@ -135,7 +135,7 @@ function bootstrap_scripts() {
 }
 
 function fontawesome_scripts() {
-	wp_enqueue_style( 'font-awesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
+	wp_enqueue_style( 'font-awesome-style', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', false );
 }
 
 function google_fonts() {
