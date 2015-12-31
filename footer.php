@@ -11,11 +11,11 @@
 
 ?>
 		<footer class="row">
-	        <div class="site-description col-md-8">
+	        <div class="site-description col-md-8 col-sm-12">
 	            <p class="title">About Actually</p>
 	            <p><em>Actually It's Rob Penty Dot Org</em> is - you guessed it - Rob Penty's blog. Rob is a writer, storyteller, and improviser living in Brooklyn, NY. He is also a web developer and he built this theme from scratch using Underscores and Bootstrap. You can connect with Rob on any of the social media platforms you see here.</p>
 	        </div>
-	        <div class="social clearfix col-md-4">
+	        <div class="social clearfix col-md-4 col-sm-12">
 	            <a href="https://www.facebook.com/rob.penty.3" target="_blank"><i class="fa fa-facebook"></i></a>
 	            <a href="https://twitter.com/robpenty" target="_blank"><i class="fa fa-twitter"></i></a>
 	            <a href="http://robpenty.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
@@ -28,13 +28,6 @@
 	    </footer>
     </div><!-- #content -->
 
-	<!--footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php //echo esc_url( __( 'https://wordpress.org/', 'actually' ) ); ?>"><?php //printf( esc_html__( 'Proudly powered by %s', 'actually' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php //printf( esc_html__( 'Theme: %1$s by %2$s.', 'actually' ), 'actually', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div--><!-- .site-info -->
-	<!--/footer--><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
