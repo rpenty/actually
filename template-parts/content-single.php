@@ -22,7 +22,7 @@ $article_page_tagline = get_field('article_page_tagline');
 				?>
 				<div class="row article-details">
                     <!--div class="share col-xs-5"><i class="fa fa-share"></i> Share></div-->
-                    <div class="comments col-xs-6"><i class="fa fa-comments"></i> 3 Comments</div>
+                    <div class="comments col-xs-6"><i class="fa fa-comments"></i> <?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></div>
                     <div class="post-date col-xs-6 text-right"><?php the_date(); ?></div>
                 </div>
                 <?php
