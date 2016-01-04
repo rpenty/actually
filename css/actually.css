@@ -99,6 +99,9 @@ header .search-social { padding: 0 15px; }
 .entry-content p a:visited,
 .entry-content p a:hover {color: darkgoldenrod;}
 
+.entry-content figure { margin: 0; }
+.wp-caption .wp-caption-text { font-size: 10pt; color: #666; }
+
 h1 { font-family: "Crimson Text Italic"; font-size: 18pt; font-style: italic; margin: 0 0 20px 0; padding: 0; }
 blockquote { color: #848484; border-top: 3px solid #848484; border-bottom: 1px solid #848484; border-left: none; border-right: none; padding: 20px 85px; margin: 30px 0; text-align: center; font-family: "Crimson Text Italic"; font-style: italic; font-size: 28pt; font-weight: 400; }
 .addthis_toolbox { margin: 0 !important;}
