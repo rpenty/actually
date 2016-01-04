@@ -10,22 +10,24 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'actually' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'actually' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	<div class="row article">
+    	<div class="article-main col-lg-8 col-md-6 col-xs-12">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+			<div class="entry-content">
+				<?php the_content(); ?>
+				<?php
+					/*wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'actually' ),
+						'after'  => '</div>',
+					) );*/
+				?>
+			</div><!-- .entry-content -->
+		</div><!-- .article-main -->
+		<div class="right-section col-lg-4 col-md-6 col-xs-12">
+	        <?php get_sidebar(); ?>
+		</div><!-- .right-section -->
+	</div><!-- .row .article -->
 </article><!-- #post-## -->
 

@@ -13,7 +13,7 @@
 		<footer class="row">
 	        <div class="site-description col-md-8 col-sm-12">
 	            <p class="title">About Actually</p>
-	            <p><em>Actually It's Rob Penty Dot Org</em> is - you guessed it - Rob Penty's blog. Rob is a writer, storyteller, and improviser living in Brooklyn, NY. He is also a web developer and he built this theme from scratch using Underscores and Bootstrap. You can connect with Rob on any of the social media platforms you see here.</p>
+	            <p><em>Actually It's Rob Penty Dot Org</em> is - you guessed it - Rob Penty's blog. Rob is a <a href="/writer/">writer</a>, <a href="/storyteller/">storyteller</a>, and <a href="http://www.magnettheater.com/performers/Rob-Penty" target="_blank">improviser</a> living in Brooklyn, NY. He is also a web developer and he built this theme from scratch using <a href="http://underscores.me/" target="_blank">Underscores</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You can connect with Rob on any of the social media platforms you see here. And sign up for his newsletter to receive a monthly update about shows and upcoming events.</p>
 	        </div>
 	        <div class="social clearfix col-md-4 col-sm-12">
 	            <a href="https://www.facebook.com/rob.penty.3" target="_blank"><i class="fa fa-facebook"></i></a>
