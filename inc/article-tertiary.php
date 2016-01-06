@@ -5,7 +5,7 @@
     <p class="post-category"><?php the_category(', '); ?></p>
     <?php the_title( sprintf( '<p class="article-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); 
     echo "<p>" . $home_page_excerpt . "</p>"; 
-    the_excerpt(); ?>
+    ?>
     <p class="featured-text"><a href="<?php echo esc_url( get_permalink() ); ?>" class="continue">More...</a></p>
     <div class="post-details row no-gutter">
         <!--div class="share col-md-3 col-xs-2"><i class="fa fa-share"></i></div-->

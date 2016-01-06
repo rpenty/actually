@@ -13,7 +13,7 @@ $article_page_tagline = get_field('article_page_tagline');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row article">
-    	<div class="article-main col-lg-8 col-md-6 col-xs-12">
+    	<div class="article-main col-md-8 col-xs-12">
 			<header class="entry-header">
 				<div class="post-category"><?php the_category(', '); ?></div>
 				<?php
@@ -37,7 +37,7 @@ $article_page_tagline = get_field('article_page_tagline');
 				<?php the_post_navigation(); ?>
 			</div><!-- .entry-content -->
 		</div><!-- .article-main -->
-		<div class="right-section col-lg-4 col-md-6 col-xs-12">
+		<div class="right-section col-md-4 col-xs-12">
 	        <?php get_sidebar(); ?>
 		</div>
 

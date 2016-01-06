@@ -82,8 +82,7 @@ header .search-social { padding: 0 15px; }
 .article-title { font-family:"Crimson Text"; }
 .article-title a { color: #000; text-decoration: none; }
 .article-title a:hover { text-decoration: none; }
-.article .article-main { border-right: 1px solid #000; }
-.article .article-main p { margin: 15px 0; }
+.article .article-main p { margin: 25px 0; }
 .article-teaser { font-family: "Crimson Text Italic"; font-style: italic; font-size: 18pt; font-weight: 400; color: #848484; }
 .article-details { margin: 10px 0; }
 .article-details .share,
@@ -376,7 +375,9 @@ h2.widget-title {
 
         .tertiary-articles > div {
             min-height: 200px;
-        } 
+        }
+
+        .article .article-main { border-right: 1px solid #000; }
     }
 
     /* Large Devices, Wide Screens */

@@ -13,7 +13,13 @@
 	<div class="row article">
     	<div class="article-main col-lg-8 col-md-6 col-xs-12">
 			<header class="entry-header">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<?php
+					the_title( '<div class="article-title">', '</div>' );
+
+					if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						the_post_thumbnail();
+					}
+				?>
 			</header><!-- .entry-header -->
 			<div class="entry-content">
 				<?php the_content(); ?>
