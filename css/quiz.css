@@ -1,0 +1,44 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 28px;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+.correct input[type=checkbox]:checked + label:before { content: "\f046"; color: green; } /* checked icon */
+.incorrect input[type=checkbox]:checked + label:before { content: "\f046"; color: red; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+.question-group { font-size: 24px; }
+
+.question-checkbox {padding: 5px 10px; margin: 0 0 10px 0; width: 95%; background-color: #efefef;}
+.answer-comment { padding: 0 10px 10px 10px; }
+
+.correct {background-color: lightgreen;}
+.incorrect {background-color: pink;}
+
+.answer-comment.correct  { background-color: transparent; color: green;}
+.answer-comment.incorrect { background-color: transparent; color: red;}
+
+.get-quiz-result {
+	width: 100px;
+    height: 50px;
+    font-size: 20px !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: orange !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: none !important;
+}
+
+.quiz-result {
+	padding: 5px 10px; margin: 0 0 10px 0; width: 95%; background-color: #efefef; font-size: 24px;
+	display: none;
+}
