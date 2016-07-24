@@ -1,7 +1,7 @@
 body { padding: 0; margin: 0; }
 #container-main { width: 1170px; margin: 0 auto; position: relative; }
 hr {width: 100%; color: #000; background-color: #000; height: 1px; margin: 0; padding: 0; border: none;}
-p {padding: 0; margin: 0; font-family: "Crimson Text"; } /* font-size: 18pt; */
+p {padding: 0; margin: 0; font-family: "Roboto"; } /* font-size: 18pt; */
 a, a:visited, a:hover {color: #000;}
 
 /********** HEADER STYLES - BEGIN **********/
@@ -82,7 +82,7 @@ header .search-social { padding: 0 15px; }
 .article-title { font-family:"Crimson Text"; }
 .article-title a { color: #000; text-decoration: none; }
 .article-title a:hover { text-decoration: none; }
-.article .article-main p { margin: 25px 0; }
+.article .article-main p { margin: 25px 0; font-family: "Crimson Text"; }
 .article-teaser { font-family: "Crimson Text Italic"; font-style: italic; font-size: 18pt; font-weight: 400; color: #848484; }
 .article-details { margin: 10px 0; }
 .article-details .share,
