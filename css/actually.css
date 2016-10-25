@@ -189,12 +189,29 @@ footer a { font-weight: bold; }
 }
 /********** FOOTER STYLES - END **********/
 
-#wbounce-modal-sub #mc_embed_signup_scroll {
-    padding-bottom: 30px;
+.wbounce-modal .wbounce-modal-sub {
+    background: url(/wp-content/themes/actually/images/rob-popup.jpg) no-repeat scroll 0 0 transparent;
+    width: 500px;
+    height: 393px;
+    color: #ffffff;
 }
-#wbounce-modal-sub .mc-field-group {
-    margin-bottom: 15px;
+.wbounce-modal form { 
+    text-align: left;
+    margin-left: 175px;
+    text-align: left;
+    width: 300px;
+
 }
+.wbounce-modal form input[type="text"], 
+.wbounce-modal form input[type="email"], 
+.wbounce-modal form input[type="tel"] {
+    width: 200px;
+    height: 20px;
+    margin: 0 0 15px;
+}
+.wbounce-modal form p { color: #fff; font-size: 10pt; margin: 0 0 15px 0; opacity: 1; }
+.wbounce-modal label { margin-bottom: 0; }
+.wbounce-modal .asterisk { color: red;}
 
 /********** WIDGET STYLES - BEGIN **********/
 aside.widget ul,
