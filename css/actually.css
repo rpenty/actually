@@ -213,6 +213,8 @@ footer a { font-weight: bold; }
 .wbounce-modal label { margin-bottom: 0; }
 .wbounce-modal .asterisk { color: red;}
 
+.modal-footer { border-top: none !important; }
+
 /********** WIDGET STYLES - BEGIN **********/
 aside.widget ul,
 .wpp-list {
