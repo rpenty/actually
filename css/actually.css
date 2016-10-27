@@ -62,7 +62,7 @@ header .search-social { padding: 0 15px; }
 .featured-text { margin-bottom: 10px; font-size: 14pt;}
 .featured-text .continue { color: #ff3300; text-decoration: none; }
 .post-category { font-size: 12pt; text-transform: uppercase; }
-.post-category a { color: #000; }
+.post-category a { color: #000; font-family: "Roboto"; }
 .post-category a:hover { color: #000; }
 .featured-article-details { width: 360px; float: right; }
 
@@ -78,7 +78,7 @@ header .search-social { padding: 0 15px; }
 .tertiary-articles { margin: 50px 0; }
 .tertiary-articles .article-title { font-family: "Roboto"; font-weight: bold; font-size: 20pt; }
 
-.article { font-family: "Roboto"; font-size: 16pt; margin: 20px 0 0 0; }
+.article { font-family: "Crimson Text"; font-size: 16pt; margin: 20px 0 0 0; }
 .article-title { font-family:"Crimson Text"; }
 .article-title a { color: #000; text-decoration: none; }
 .article-title a:hover { text-decoration: none; }
@@ -96,7 +96,10 @@ header .search-social { padding: 0 15px; }
 }
 .entry-content p a,
 .entry-content p a:visited,
-.entry-content p a:hover {color: darkgoldenrod;}
+.entry-content p a:hover,
+.entry-content a,
+.entry-content a:visited,
+.entry-content a:hover {color: darkgoldenrod;}
 
 .entry-content figure { margin: 0; }
 .wp-caption .wp-caption-text { font-size: 10pt; color: #666; }
