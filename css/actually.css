@@ -76,6 +76,7 @@ header .search-social { padding: 0 15px; }
 .sub-articles .article-title { font-family: "Roboto"; font-weight: bold; font-size: 24pt; }
 
 .tertiary-articles { margin: 50px 0; }
+.tertiary-articles > div {text-align: center;}
 .tertiary-articles .article-title { font-family: "Roboto"; font-weight: bold; font-size: 20pt; }
 
 .article { font-family: "Crimson Text"; font-size: 16pt; margin: 20px 0 0 0; }

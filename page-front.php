@@ -21,18 +21,18 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php //get_template_part( 'template-parts/content', 'front' ); 
+				<?php
 
 				$post_number = 0;
-				$category_post_number = 0;
-
+				$sub_category_post_number = 0;
+				$tert_category_post_number = 0;
 				
 
 				global $post;
-				$myposts = get_posts('numberposts=7');
-
-
-				$home_page_category = get_field('category');
+				$myposts = get_posts('numberposts=3');
+				
+				$home_page_category = explode(",",get_field('category'));
+				
 				$home_page_tag = get_field('tag');
 
 				foreach($myposts as $post) :
@@ -45,25 +45,40 @@ get_header(); ?>
 				            get_template_part( 'inc/article', 'recent' );
 				        if ($post_number == 2) { echo '</div><hr>'; }
 
-				  	} else if ($post_number >= 3 && $post_number <= 6) { 
-				  		if ($post_number == 3) { echo '<div class="row sub-articles">'; }
-				  		    get_template_part( 'inc/article', 'sub' );
-						if ($post_number == 6) { echo '</div><hr>'; }
-					}
+				  	}
 
 					$post_number++;
 
 				endforeach;
+
+				foreach ($home_page_category as $hp_cat) :
+					
+					$subArticleArgs = array ('numberposts' => 4, 'orderby' => 'rand', 'category_name' => $hp_cat);
+					$mysubposts = get_posts($subArticleArgs);
+
+					$sub_category_post_number = 0;
+
+					foreach($mysubposts as $post) :
+
+						if ($sub_category_post_number == 0) { echo '<div class="row sub-articles"><h1>' . $hp_cat . '</h1>'; }
+	            			get_template_part( 'inc/article', 'sub' );
+	     				if ($sub_category_post_number == 3) { echo '</div><hr>'; }
+
+						$sub_category_post_number++;
+					endforeach;
 				
-				$args = array ('numberposts' => 6, 'offset' => 7, 'category_name' => $home_page_category);
-				$mycatposts = get_posts($args);
-				foreach($mycatposts as $post) :
+				endforeach;
+				
+				
+				$tertArticleArgs = array ('numberposts' => 6, 'offset' => 7, 'orderby' => 'rand', 'category_name' => 'Life');
+				$mytertposts = get_posts($tertArticleArgs);
+				foreach($mytertposts as $post) :
 
-					if ($category_post_number == 0) { echo '<div class="row tertiary-articles"><h1>' . $home_page_category . '</h1>'; }
+					if ($tert_category_post_number == 0) { echo '<div class="row tertiary-articles">'; }
             			get_template_part( 'inc/article', 'tertiary' );
-     				if ($category_post_number == 5) { echo '</div>'; }
+     				if ($tert_category_post_number == 5) { echo '</div>'; }
 
-					$category_post_number++;
+					$tert_category_post_number++;
 				endforeach;
 
 
