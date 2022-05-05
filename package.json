@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Theme for actuallyitsrobpentydotorg",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,22 @@
   "bugs": {
     "url": "https://github.com/rpenty/actually/issues"
   },
-  "homepage": "https://github.com/rpenty/actually#readme"
+  "homepage": "https://github.com/rpenty/actually#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.9",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^5.1.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.2.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-debug": "^4.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "postcss-assets": "^6.0.0"
+  }
 }
