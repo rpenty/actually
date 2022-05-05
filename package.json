@@ -1,0 +1,23 @@
+{
+  "name": "actually",
+  "version": "1.0.0",
+  "description": "Theme for actuallyitsrobpentydotorg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpenty/actually.git"
+  },
+  "keywords": [
+    "blog",
+    "theme"
+  ],
+  "author": "Rob Penty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpenty/actually/issues"
+  },
+  "homepage": "https://github.com/rpenty/actually#readme"
+}
